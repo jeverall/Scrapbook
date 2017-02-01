@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>    
+	
+	<style>
+	
+	body {
+	height:100%;
+	width:100%;
+	}
+		
+	#circle {
+	width:100px;
+	height:100px;
+	background-color:green;
+	border-radius:10em;
+	margin:10px;
+	text-align:center;
+	display:table;
+	position:relative;
+	}
+	
+	#circle p {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+    color:white;
+    font-size:2em;
+	}
+	
+	.square {
+	width:200px;
+	height:200px;
+	background-color:red;
+	margin:10px;
+	}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<div id="circle"><p>Click Me!</p></div>
+
+	<script>
+	
+		$("#circle").click(function() 
+		
+		{	$(this).animate({width:"300px",
+				marginLeft:"300px",
+			}, 500);
+			
+			{	$(this).animate({
+				marginTop:"300px",
+				}, 500);}
+			
+			{	$(this).animate({
+				marginLeft:"0",
+				}, 500);}
+			
+			{	$(this).animate({
+				marginTop:"0",
+				}, 500);}
+				
+			{	$(this).animate({
+				height:"300px",
+				}, 500);}
+			
+			});
+	
+	</script>
+	
+	
+</body>
+</html>

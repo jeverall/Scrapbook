@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+</head>
+
+<body>
+	
+	<p id="text">Some text</p>
+	
+	<button id="name">New Name</button>
+	
+	<p id="text2">Agante Web Development</p>
+	
+	<hr/>
+	
+	<button id="b2">Click Me</button>
+	
+	<button id="add">Add to it</button>
+	
+	<button id="create">Create me!</button>
+	
+	<div> <p id="changediv">This is some text</p> </div>
+	
+	<div> <p id="adddiv">A..Ga...</p></div>
+	
+	<div id="empty"></div>
+	
+	<script type="text/javascript">
+	
+	// first section
+		document.getElementById("name").onclick=function() {
+			document.getElementById("text2").innerHTML=("Everweb Creations");
+		}
+		
+	// first section
+	
+		document.getElementById("b2").onclick=function() {
+			document.getElementById("changediv").innerHTML="This is challenging.";
+		}
+		
+		document.getElementById("add").onclick=function() {
+			document.getElementById("adddiv").innerHTML=document.getElementById("adddiv").innerHTML + "Do!";
+		}
+		
+		document.getElementById("create").onclick=function() {
+			document.getElementById("empty").innerHTML="Ta Da!!!";
+		}
+	
+		
+	</script>
+	
+</body>
+</html>
